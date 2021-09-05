@@ -2,10 +2,6 @@
 function move_to_border!(r::Robot)
     i::Integer = 0
     back::HorizonSide = HorizonSide(3)
-    #=
-    Debug string
-    #putmarker!(r)
-    =#
     while !isborder(r, back)
         move!(r, back)
         i += 1
